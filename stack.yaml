@@ -1,9 +1,14 @@
 resolver: lts-8.9
 
 packages:
+- '.'
 - dep1
 - dep2
-- '.'
+- location:
+    git: https://github.com/jmitchell/haskell-dummy-project1
+    commit: 1af8df18e991bc3f9d0eda2bcf44d9d73be904a7
+  extra-dep: true
+
 
 extra-deps: []
 
